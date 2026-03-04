@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ТРЦ «Атриум» — Личный кабинет</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="header-card">
+        <div class="brand">
+          <h1>ТРЦ «Атриум»</h1>
+          <p>Регистрация и авторизация (демо)</p>
+        </div>
+
+        <hr>
+
+        <nav aria-label="Меню сайта">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="account.html">Личный кабинет</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Гостевая страница пользователей</h2>
+
+        <div class="form-row" style="margin-bottom:12px;">
+          <button type="button" data-tab="login" disabled>Авторизация</button>
+          <button type="button" data-tab="register">Регистрация</button>
+        </div>
+
+        <!-- Авторизация -->
+        <div data-panel="login" style="display:block;">
+          <h3>Авторизация</h3>
+          <form data-ajax>
+            <label for="loginEmail">Email</label>
+            <input id="loginEmail" name="email" type="email" required>
+
+            <label for="loginPass">Пароль</label>
+            <input id="loginPass" name="password" type="password" required>
+
+            <div style="margin-top:12px;">
+              <button type="submit">Войти</button>
+            </div>
+            <div class="notice" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <!-- Регистрация -->
+        <div data-panel="register" style="display:none;">
+          <h3>Регистрация</h3>
+          <form data-ajax>
+            <label for="regName">Имя</label>
+            <input id="regName" name="name" type="text" required>
+
+            <label for="regEmail">Email</label>
+            <input id="regEmail" name="email" type="email" required>
+
+            <label for="regPass">Пароль</label>
+            <input id="regPass" name="password" type="password" required>
+
+            <label for="regCity">Город (произвольное поле)</label>
+            <input id="regCity" name="city" type="text" placeholder="Например: Москва">
+
+            <div style="margin-top:12px;">
+              <button type="submit">Создать аккаунт</button>
+            </div>
+            <div class="notice" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-card">
+        <div>
+          <span class="badge">© 2026</span>
+          <span>ТРЦ «Атриум»</span>
+        </div>
+        <div>Все права защищены</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

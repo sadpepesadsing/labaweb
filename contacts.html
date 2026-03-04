@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ТРЦ «Атриум» — Контакты</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="header-card">
+        <div class="brand">
+          <h1>ТРЦ «Атриум»</h1>
+          <p>Свяжитесь с нами</p>
+        </div>
+
+        <hr>
+
+        <nav aria-label="Меню сайта">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="account.html">Личный кабинет</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <hr>
+
+      <section class="card">
+        <h2>Напишите нам</h2>
+
+        <form data-ajax>
+          <div class="form-row">
+            <div>
+              <label for="name">Имя</label>
+              <input id="name" name="name" type="text" placeholder="Введите имя" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="name@example.com" required>
+            </div>
+          </div>
+
+          <label for="topic">Тема</label>
+          <input id="topic" name="topic" type="text" placeholder="Например: Аренда / Парковка / Реклама" required>
+
+          <!-- произвольное поле -->
+          <label for="department">Отдел</label>
+          <select id="department" name="department">
+            <option value="support">Поддержка</option>
+            <option value="rent">Аренда</option>
+            <option value="marketing">Маркетинг</option>
+          </select>
+
+          <label for="message">Текстовое поле</label>
+          <textarea id="message" name="message" placeholder="Ваше сообщение..." required></textarea>
+          <div id="counter" class="small muted">Символов: 0</div>
+
+          <div style="margin-top:12px;">
+            <button type="submit">Отправить</button>
+          </div>
+
+          <div class="notice" aria-live="polite"></div>
+        </form>
+
+        <hr>
+
+        <h2>Адрес</h2>
+        <p>
+          Контактный номер: <a href="tel:+79990000000">+7 (999) 000‑00‑00</a><br>
+          Адрес: г. Москва, ул. Примерная, д. 1 (замените на свой вариант)<br>
+          Email: <a href="mailto:info@atrium.example">info@atrium.example</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-card">
+        <div>
+          <span class="badge">© 2026</span>
+          <span>ТРЦ «Атриум»</span>
+        </div>
+        <div>Все права защищены</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
