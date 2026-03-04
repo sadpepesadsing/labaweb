@@ -25,104 +25,89 @@
             <li><a href="index.html">Главная</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="contacts.html">Контакты</a></li>
-            <!-- дополнительная страница с формами -->
             <li><a href="account.html">Личный кабинет</a></li>
-            <!-- якорь (внутренняя ссылка) -->
             <li><a href="#employees">Сотрудники (якорь)</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="grid">
-      <section class="card">
-        <h2>О нас</h2>
-        <p>
-          ТРЦ «Атриум» — современный торгово‑развлекательный центр: магазины,
-          рестораны, кинотеатр, зона услуг и удобная транспортная доступность.
-        </p>
+    <main>
+      <div class="grid">
+        <section class="card">
+          <h2>О нас</h2>
+          <p>
+            ТРЦ «Атриум» — современный торгово‑развлекательный центр: магазины,
+            рестораны, кинотеатр, зона услуг и удобная транспортная доступность.
+          </p>
 
-        <h2>История фирмы</h2>
-        <p class="muted">
-          Проект развивался как городской центр притяжения: расширение арендаторов,
-          обновление навигации, улучшение сервиса и повышение комфорта посетителей.
-        </p>
+          <h2>История фирмы</h2>
+          <p class="muted">
+            Проект развивался как городской центр притяжения: расширение арендаторов,
+            обновление навигации, улучшение сервиса и повышение комфорта посетителей.
+          </p>
 
-        <hr>
+          <hr>
 
-        <h2 id="employees">Сотрудники</h2>
-        <!-- Таблица -->
-        <table class="table">
-          <thead>
-            <tr>
-              <th>ФИО</th>
-              <th>Должность</th>
-              <th>Контакт</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Иванова А.В.</td>
-              <td>Администратор ТРЦ</td>
-              <td><a href="mailto:admin@atrium.example">admin@atrium.example</a></td>
-            </tr>
-            <tr>
-              <td>Петров С.Н.</td>
-              <td>Отдел аренды</td>
-              <td><a href="tel:+79990000000">+7 (999) 000‑00‑00</a></td>
-            </tr>
-            <tr>
-              <td>Смирнова Е.К.</td>
-              <td>Поддержка клиентов</td>
-              <td><a href="mailto:support@atrium.example">support@atrium.example</a></td>
-            </tr>
-          </tbody>
-        </table>
+          <h2 id="employees">Сотрудники</h2>
+          <p class="muted">Руководящая команда ТРЦ «Атриум».</p>
 
-        <p class="small">
-          Внешняя ссылка: <a href="https://ru.wikipedia.org/wiki/Торговый_центр" target="_blank" rel="noopener">
-            что такое торговый центр (откроется в новом окне)
-          </a>
-        </p>
+          <div class="staff-grid">
+            <article class="staff-card">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80" alt="Владелец ТРЦ" />
+              <h3>Алексей Романов</h3>
+              <p>Владелец ТРЦ</p>
+            </article>
 
-        <p class="small">
-          Ссылка на скачивание (пример): <a href="files/price-list.pdf" download>Скачать прайс-лист (PDF)</a>
-        </p>
-      </section>
+            <article class="staff-card">
+              <img src="https://images.unsplash.com/photo-1573496799515-eebbb63814f2?auto=format&fit=crop&w=900&q=80" alt="Менеджер контроля качества продукции" />
+              <h3>Марина Зорина</h3>
+              <p>Менеджер контроля качества продукции</p>
+            </article>
 
-      <aside class="card">
-        <h2>План ТРЦ (карта изображения)</h2>
-        <p class="small muted">Нажмите на зоны, чтобы перейти в Каталог/Контакты.</p>
+            <article class="staff-card">
+              <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=900&q=80" alt="Директор отдела по безопасности" />
+              <h3>Дмитрий Орлов</h3>
+              <p>Директор отдела по безопасности</p>
+            </article>
+          </div>
 
-        <!-- Image map -->
-        <img src="img/atrium-plan.jpg" alt="Схема ТРЦ Атриум" usemap="#atriumMap" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,.15);" />
+          <p class="small">
+            Ссылка на скачивание (пример): <a href="files/price-list.pdf" download>Скачать прайс-лист (PDF)</a>
+          </p>
+        </section>
 
-        <map name="atriumMap">
-          <!-- Координаты нужно подогнать под вашу картинку -->
-          <area shape="rect" coords="20,20,220,120" href="catalog.html" alt="Перейти в каталог" />
-          <area shape="rect" coords="20,140,220,240" href="contacts.html" alt="Перейти в контакты" />
-          <area shape="rect" coords="20,260,220,360" href="account.html" alt="Личный кабинет" />
-        </map>
+        <aside class="card">
+          <h2>План ТРЦ (карта изображения)</h2>
+          <p class="small muted">Нажмите на зоны, чтобы перейти в Каталог/Контакты.</p>
 
-        <hr>
+          <img src="img/atrium-plan.jpg" alt="Схема ТРЦ Атриум" usemap="#atriumMap" style="width:100%; border-radius:12px; border:1px solid var(--line);" />
 
-        <h2>Мы на карте (iframe)</h2>
-        <p class="small muted">Фрейм/iframe как элемент дизайна.</p>
+          <map name="atriumMap">
+            <area shape="rect" coords="20,20,220,120" href="catalog.html" alt="Перейти в каталог" />
+            <area shape="rect" coords="20,140,220,240" href="contacts.html" alt="Перейти в контакты" />
+            <area shape="rect" coords="20,260,220,360" href="account.html" alt="Личный кабинет" />
+          </map>
 
-        <!-- iframe (фрейм). Можно вставить реальную карту из Яндекс/Google -->
-        <iframe
-          title="Карта (демо)"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=37.60%2C55.75%2C37.62%2C55.76&layer=mapnik"
-          style="width:100%; height:220px; border:1px solid rgba(255,255,255,.15); border-radius:12px;">
-        </iframe>
+          <hr>
 
-        <p class="small">
-          Ссылка-картинка:
-          <a href="catalog.html" title="Перейти в каталог">
-            <img src="img/atrium.jpg" alt="ТРЦ Атриум" style="width:100%; margin-top:10px; border-radius:12px; border:1px solid rgba(255,255,255,.15);" />
-          </a>
-        </p>
-      </aside>
+          <h2>Мы на карте (iframe)</h2>
+          <p class="small muted">Фрейм/iframe как элемент дизайна.</p>
+
+          <iframe
+            title="Карта (демо)"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=37.60%2C55.75%2C37.62%2C55.76&layer=mapnik"
+            style="width:100%; height:220px; border:1px solid var(--line); border-radius:12px;">
+          </iframe>
+
+          <p class="small">
+            Ссылка-картинка:
+            <a href="catalog.html" title="Перейти в каталог">
+              <img src="img/atrium.jpg" alt="ТРЦ Атриум" style="width:100%; margin-top:10px; border-radius:12px; border:1px solid var(--line);" />
+            </a>
+          </p>
+        </aside>
+      </div>
     </main>
 
     <footer>
